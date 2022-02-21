@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final ImageView balldisplay = findViewById(R.id.main_image);
+        final ImageView balldisplay = findViewById(R.id.ask_image);
 
-      final   int[] ballarray = {
+      final int[] ballArray = {
                 R.drawable.ball1,
                 R.drawable.ball2,
                 R.drawable.ball3,
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Random rand = new Random();
                 int num = rand.nextInt(5);
-                balldisplay.setImageResource(ballarray[num]);
+                balldisplay.setImageResource(ballArray[num]);
             }
         });
     }
